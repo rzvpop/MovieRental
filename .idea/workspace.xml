@@ -7,7 +7,6 @@
       <change afterPath="$PROJECT_DIR$/../InterpreterFXExProcedure/src/Model/Utils/IProcTable.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterpreterFXExProcedure/src/Model/Utils/ProcTable.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../InterpreterFXExProcedure/test.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Interpreter/src/Controller/InterpreterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interpreter/src/Controller/InterpreterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Interpreter/src/Model/Expression/ArithExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interpreter/src/Model/Expression/ArithExp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Interpreter/src/Model/Expression/ConstExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interpreter/src/Model/Expression/ConstExp.java" afterDir="false" />
@@ -23,6 +22,8 @@
       <change beforePath="$PROJECT_DIR$/../Interpreter/src/Repository/Repo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interpreter/src/Repository/Repo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Interpreter/src/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interpreter/src/View/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterpreterFX/src/View/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterpreterFX/src/View/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,54 +52,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="51" />
+          <entry key="java" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="51" />
+          <entry key="JAVA" value="75" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="228" column="28" selection-start-line="228" selection-start-column="28" selection-end-line="228" selection-end-column="28" />
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding>
-                <element signature="e#6354#6358#0" expanded="true" />
-                <element signature="e#6358#6362#0" expanded="true" />
-                <element signature="e#6362#6366#0" expanded="true" />
-                <element signature="e#6366#6370#0" expanded="true" />
-                <element signature="e#6370#6374#0" expanded="true" />
-                <element signature="e#6374#6378#0" expanded="true" />
-                <element signature="e#6378#6382#0" expanded="true" />
-                <element signature="e#6406#6410#0" expanded="true" />
-                <element signature="e#6410#6414#0" expanded="true" />
-                <element signature="e#6414#6418#0" expanded="true" />
-                <element signature="e#6418#6422#0" expanded="true" />
-                <element signature="e#6422#6426#0" expanded="true" />
-                <element signature="e#6426#6430#0" expanded="true" />
-                <element signature="e#6430#6434#0" expanded="true" />
-                <element signature="e#6486#6490#0" expanded="true" />
-                <element signature="e#6490#6494#0" expanded="true" />
-                <element signature="e#6494#6498#0" expanded="true" />
-                <element signature="e#6498#6502#0" expanded="true" />
-                <element signature="e#6502#6506#0" expanded="true" />
-                <element signature="e#6506#6510#0" expanded="true" />
-                <element signature="e#6510#6514#0" expanded="true" />
+                <element signature="e#67#68#0" expanded="true" />
+                <element signature="e#103#104#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,7 +142,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551437211879" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551437529168" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Interpreter/src/Repository/Repo.java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -243,7 +216,11 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding>
+            <element signature="e#67#68#0" expanded="true" />
+            <element signature="e#103#104#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
