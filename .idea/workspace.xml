@@ -98,8 +98,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1430" />
-    <option name="y" value="-11" />
+    <option name="x" value="64" />
+    <option name="y" value="757" />
     <option name="width" value="1303" />
     <option name="height" value="780" />
   </component>
@@ -130,7 +130,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551435754905" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551435756057" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Interpreter/src/Repository/Repo.java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
