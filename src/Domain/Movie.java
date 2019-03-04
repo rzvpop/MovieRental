@@ -28,7 +28,12 @@ public class Movie extends BaseEntity<Long>
         return date_time.equals(movie.date_time);
     }
 
-
+	
+/**
+*
+* A simple getter
+* @return the name of the file
+*/
     public String getName()
     {
         return name;

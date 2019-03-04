@@ -24,6 +24,20 @@ public class View
         System.out.println();
     }
 
+    public int getOption(){
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("Enter option: ");
+	int option = 0;
+	try {
+		option = scanner.nextInt();
+	}	
+	catch (RuntimeException e){
+		System.out.print("Invalid input! Try again!");
+		return getOption();
+	}
+	return option;
+   }
+
     public Movie readMovie()
     {
         Scanner scanner = new Scanner(System.in);
@@ -48,11 +62,9 @@ public class View
         Scanner scanner = new Scanner(System.in);
 
         System.out.print(">>");
-        option = scanner.nextInt();
-        while(option != 0)
+	option = getOption();
+	while(option != 0)
         {
-            try
-            {
                 if (option == 1)
                 {
                     for (Movie movie : ctrl.getAllMovies()) {
@@ -72,20 +84,11 @@ public class View
                     Movie movie = readMovie();
                     ctrl.addMovie(movie);
                 }
-                else if (option > 3)
+                else {
                     System.out.println("Invalid option.");
-
+		}
                 System.out.print(">>");
-                option = scanner.nextInt();
-            }
-            catch (RuntimeException ex)
-            {
-                System.out.println(ex.getMessage());
-                System.out.print(">>");
-                option = scanner.nextInt();
-            }
-
+                option = getOption();
         }
-
     }
 }
