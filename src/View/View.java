@@ -58,17 +58,21 @@ public class View
                     for (Movie movie : ctrl.getAllMovies()) {
                         System.out.println(movie.toString());
                     }
-                } else if (option == 2)
+                }
+                else if (option == 2)
                 {
                     String str = scanner.next();
 
                     for (Movie movie : ctrl.filterMoviesByName(str)) {
                         System.out.println(movie.toString());
                     }
-                } else if (option == 3)
+                }
+                else if (option == 3)
                 {
-                    ctrl.addMovie(readMovie());
-                } else if (option > 3)
+                    Movie movie = readMovie();
+                    ctrl.addMovie(movie);
+                }
+                else if (option > 3)
                     System.out.println("Invalid option.");
 
                 System.out.print(">>");
@@ -77,6 +81,8 @@ public class View
             catch (RuntimeException ex)
             {
                 System.out.println(ex.getMessage());
+                System.out.print(">>");
+                option = scanner.nextInt();
             }
 
         }
