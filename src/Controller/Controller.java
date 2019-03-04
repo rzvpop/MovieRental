@@ -16,7 +16,8 @@ public class Controller {
     public Controller(Repo<Long, Movie> _movie_repo) {
         movie_repo = _movie_repo;
     }
-
+	
+    //function to save a movie
     public void addMovie(Movie movie) {
         movie_repo.save(movie);
     }
