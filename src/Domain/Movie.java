@@ -51,6 +51,6 @@ public class Movie extends BaseEntity<Long>
 
     public String toString()
     {
-        return name + " | " + date_time + " | price: " + Integer.toString(price);
+        return "Id: " + getId().toString() + " | " +  name + " | " + date_time + " | price: " + Integer.toString(price);
     }
 }

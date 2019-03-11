@@ -66,4 +66,9 @@ public class Repo<ID, T extends BaseEntity<ID>> implements IRepo<ID, T>
         validator.validate(entity);
         return Optional.ofNullable(items.computeIfPresent(entity.getId(), (k,v) -> entity));
     }
+
+    public int size()
+    {
+        return items.size();
+    }
 }

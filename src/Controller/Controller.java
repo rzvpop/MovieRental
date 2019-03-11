@@ -61,4 +61,14 @@ public class Controller {
         return filteredMovies.stream().filter(movie -> movie.getName().contains(str)).
                 collect(Collectors.toSet());
     }
+
+    public Repo getMovieRepo()
+    {
+        return movie_repo;
+    }
+
+    public Repo getClientRepo()
+    {
+        return client_repo;
+    }
 }

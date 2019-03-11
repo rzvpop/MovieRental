@@ -33,7 +33,7 @@ public class Client extends BaseEntity<Long>
 
     public String toString()
     {
-        return name + " | age: " + Integer.toString(age);
+        return "Id: " + getId().toString() + " | " + name + " | age: " + Integer.toString(age);
     }
 
     @Override
