@@ -16,7 +16,7 @@ public class Controller {
     private Repo<Long, Rental> rental_repo;
 
     public Controller(Repo<Long, Movie> _movie_repo, Repo<Long, Client> _client_repo,
-                      Repo<Long> _rental_repo)
+                      Repo<Long, Rental> _rental_repo)
     {
         movie_repo = _movie_repo;
         client_repo = _client_repo;
