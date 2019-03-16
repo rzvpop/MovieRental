@@ -14,6 +14,7 @@ public class View
     private Controller ctrl;
     long client_id = 0;
     long movie_id = 0;
+    long rental_id = 0;
 
     public View(Controller _ctrl)
     {
@@ -104,7 +105,12 @@ public class View
         Optional<Movie> m = ctrl.getMovieRepo().findOne(m_id);
 
         if(c.isPresent() && m.isPresent())
-            return new Rental(m.get(), c.get(),false);
+        {
+            Rental r = new Rental(m.get(), c.get(),false);
+            r.setId(++rental_id);
+
+            return r;
+        }
         else
             throw new RuntimeException("Movie or client not found.");
     }

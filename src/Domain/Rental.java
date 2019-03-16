@@ -2,9 +2,9 @@ package Domain;
 
 public class Rental extends BaseEntity<Long>
 {
-    Movie movie;
-    Client client;
-    boolean returned;
+    private Movie movie;
+    private Client client;
+    private boolean returned;
 
     public Rental(Movie movie, Client client, boolean _returned)
     {
@@ -45,7 +45,7 @@ public class Rental extends BaseEntity<Long>
 
     public String toString()
     {
-        return movie.toString() + " / " + client.toString() + " / due date: " + ((returned)?"yes":"no");
+        return movie.toString() + " / " + client.toString() + " / returned: " + ((returned)?"yes":"no");
     }
 
     @Override
