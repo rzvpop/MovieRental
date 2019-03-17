@@ -27,12 +27,16 @@ public class Controller {
         rental_repo = _rental_repo;
     }
 
-    public void returnMovie(long rental_id)
+    public void returnMovie(long movie_id)
     {
-        Optional<Rental> rental = rental_repo.findOne(rental_id);
-
-        rental.ifPresent(rental1 -> rental1.setReturned(true));
-        rental.ifPresent(rental1 -> rental_repo.update(rental1));
+        for(Rental r : rental_repo.findAll())
+        {
+            if(r.getMovie().getId() == movie_id)
+            {
+                r.setReturned(true);
+                rental_repo.update(r);
+            }
+        }
     }
 
     public Set<Movie> mostRented()

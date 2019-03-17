@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89684f7d-f39e-41fb-9a33-a06bc7ff29e6" name="Default Changelist" comment="&quot;clean&quot;">
-      <change afterPath="$PROJECT_DIR$/src/Domain/RentalComparatorByMovie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Interpreter/src/Controller/InterpreterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interpreter/src/Controller/InterpreterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Interpreter/src/Model/Expression/ArithExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interpreter/src/Model/Expression/ArithExp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Interpreter/src/Model/Expression/ConstExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interpreter/src/Model/Expression/ConstExp.java" afterDir="false" />
@@ -18,15 +17,8 @@
       <change beforePath="$PROJECT_DIR$/../Interpreter/src/Repository/Repo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interpreter/src/Repository/Repo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Interpreter/src/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Interpreter/src/View/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/movierental/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/movierental/Controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/movierental/Domain/Rental.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/movierental/Domain/Rental.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/movierental/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/movierental/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/movierental/Repo/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/movierental/Repo/PersonComp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/movierental/Repo/RepoGen.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/movierental/View/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/movierental/View/View.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Rental.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,51 +32,52 @@
     <session id="-752776555">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="build" value="1" />
-          <entry key="class" value="1" />
-          <entry key="java" value="87" />
+          <entry key="class" value="2" />
+          <entry key="java" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="87" />
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="90" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="9965" />
+          <entry key="java" value="10339" />
           <entry key="txt" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9965" />
+          <entry key="JAVA" value="10339" />
           <entry key="PLAIN_TEXT" value="47" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/View/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state relative-caret-position="212">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -92,31 +85,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="494">
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding>
-                <element signature="e#1549#1550#0" expanded="true" />
-                <element signature="e#1589#1590#0" expanded="true" />
-                <element signature="e#1637#1638#0" expanded="true" />
-                <element signature="e#1677#1678#0" expanded="true" />
-                <element signature="e#1749#1750#0" expanded="true" />
-                <element signature="e#1787#1788#0" expanded="true" />
-                <element signature="e#2655#2656#0" expanded="true" />
-                <element signature="e#2688#2689#0" expanded="true" />
-                <element signature="e#2727#2728#0" expanded="true" />
-                <element signature="e#2761#2762#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repo/Repo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2200#2201#0" expanded="true" />
+                <element signature="e#2240#2241#0" expanded="true" />
+                <element signature="e#2288#2289#0" expanded="true" />
+                <element signature="e#2328#2329#0" expanded="true" />
+                <element signature="e#2400#2401#0" expanded="true" />
+                <element signature="e#2438#2439#0" expanded="true" />
+                <element signature="e#3306#3307#0" expanded="true" />
+                <element signature="e#3339#3340#0" expanded="true" />
+                <element signature="e#3378#3379#0" expanded="true" />
+                <element signature="e#3412#3413#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,6 +120,7 @@
       <find>=======</find>
       <find>&gt;&gt;&gt;&gt;&gt;&gt;&gt; rzv</find>
       <find>View</find>
+      <find>try</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,11 +143,11 @@
         <option value="$PROJECT_DIR$/src/Domain/Client.java" />
         <option value="$PROJECT_DIR$/src/Domain/Movie.java" />
         <option value="$PROJECT_DIR$/src/Repo/Repo.java" />
-        <option value="$PROJECT_DIR$/src/View/View.java" />
         <option value="$PROJECT_DIR$/src/Domain/Rental.java" />
         <option value="$PROJECT_DIR$/src/Domain/RentalComparatorByMovie.java" />
-        <option value="$PROJECT_DIR$/src/Controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/View/View.java" />
       </list>
     </option>
   </component>
@@ -181,8 +163,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,6 +177,18 @@
               <item name="movierental" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="movierental" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movierental" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movierental" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movierental" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -202,7 +196,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552765424597" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552854493797" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MovieRental/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -285,7 +279,7 @@
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14422311" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12908366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -322,18 +316,6 @@
     <MESSAGE value="&quot;clean&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="&quot;clean&quot;" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Controller/Controller.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../Interpreter/src/Repository/Repo.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -359,9 +341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -371,9 +350,6 @@
           <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/View.class">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Domain/Validators/ClientValidator.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -408,13 +384,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repo/PersonComp.java" />
     <entry file="file://$PROJECT_DIR$/src/Repo/RepoGen.java" />
-    <entry file="file://$PROJECT_DIR$/src/Repo/FileRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Domain/Rental.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
@@ -429,13 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="141" column="13" lean-forward="true" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Domain/RentalComparatorByMovie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -445,7 +407,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repo/Repo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
+        <state relative-caret-position="760">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -453,29 +415,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/View.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repo/FileRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="494">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding>
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1589#1590#0" expanded="true" />
-            <element signature="e#1637#1638#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#1749#1750#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#2655#2656#0" expanded="true" />
-            <element signature="e#2688#2689#0" expanded="true" />
-            <element signature="e#2727#2728#0" expanded="true" />
-            <element signature="e#2761#2762#0" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
+            <element signature="e#2240#2241#0" expanded="true" />
+            <element signature="e#2288#2289#0" expanded="true" />
+            <element signature="e#2328#2329#0" expanded="true" />
+            <element signature="e#2400#2401#0" expanded="true" />
+            <element signature="e#2438#2439#0" expanded="true" />
+            <element signature="e#3306#3307#0" expanded="true" />
+            <element signature="e#3339#3340#0" expanded="true" />
+            <element signature="e#3378#3379#0" expanded="true" />
+            <element signature="e#3412#3413#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/View/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="212">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
         </state>
       </provider>
     </entry>

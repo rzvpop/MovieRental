@@ -24,21 +24,21 @@ public class View
     public void printOptions()
     {
         System.out.println("Menu:");
-        System.out.println("1.All movies");
-        System.out.println("2.Print those which contain string:");
-        System.out.println("3.Add movie");
-        System.out.println("4.Add client");
-        System.out.println("5.Rent movie");
-        System.out.println("6.All clients");
-        System.out.println("7.All rentals");
-        System.out.println("8.Most rented movies");
+        System.out.println("1.Add movie");
+        System.out.println("2.Add client");
+        System.out.println("3.Rent movie");
+        System.out.println("4.Return movie");
+        System.out.println("5.All movies");
+        System.out.println("6.Print movies which contain string:");
+        System.out.println("7.All clients");
+        System.out.println("8.All rentals");
+        System.out.println("9.Most rented movies");
         System.out.println("0.Exit");
         System.out.println();
     }
 
     public int getOption(){
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter option: ");
         int option = 0;
         try {
             option = scanner.nextInt();
@@ -127,53 +127,54 @@ public class View
         option = getOption();
         while(option != 0)
         {
-            if (option == 1)
+            try
             {
-                for (Movie movie : ctrl.getAllMovies()) {
-                    System.out.println(movie.toString());
+                if (option == 1) {
+                    Movie movie = readMovie();
+                    ctrl.addMovie(movie);
+                } else if (option == 2) {
+                    Client cl = readClient();
+                    ctrl.addClient(cl);
+                } else if (option == 3) {
+                    Rental r = readRental();
+                    ctrl.addRental(r);
                 }
-            }
-            else if (option == 2)
-            {
-                String str = scanner.next();
+                else if(option == 4)
+                {
+                    System.out.println("Movie id: ");
+                    long movie_id = scanner.nextInt();
+                    ctrl.returnMovie(movie_id);
+                }
+                else if (option == 5) {
+                    for (Movie movie : ctrl.getAllMovies()) {
+                        System.out.println(movie.toString());
+                    }
+                } else if (option == 6) {
+                    String str = scanner.next();
 
-                for (Movie movie : ctrl.filterMoviesByName(str)) {
-                    System.out.println(movie.toString());
+                    for (Movie movie : ctrl.filterMoviesByName(str)) {
+                        System.out.println(movie.toString());
+                    }
+                }
+                else if (option == 7) {
+                    for (Client c : ctrl.getAllClients()) {
+                        System.out.println(c.toString());
+                    }
+                } else if (option == 8) {
+                    for (Rental r : ctrl.getAllRentals()) {
+                        System.out.println(r.toString());
+                    }
+                } else if (option == 9) {
+                    for (Movie m : ctrl.mostRented()) {
+                        System.out.println(m.toString());
+                    }
+                } else {
+                    System.out.println("Invalid option.");
                 }
             }
-            else if (option == 3)
+            catch (RuntimeException e)
             {
-                Movie movie = readMovie();
-                ctrl.addMovie(movie);
-            }
-            else if (option == 4){
-                Client cl = readClient();
-                ctrl.addClient(cl);
-            }
-            else if (option == 5){
-                Rental r = readRental();
-                ctrl.addRental(r);
-            }
-            else if (option == 6) {
-                for (Client c : ctrl.getAllClients()) {
-                    System.out.println(c.toString());
-                }
-            }
-            else if(option == 7)
-            {
-                for (Rental r : ctrl.getAllRentals()) {
-                    System.out.println(r.toString());
-                }
-            }
-            else if (option == 8)
-            {
-                for (Movie m : ctrl.mostRented()){
-                    System.out.println(m.toString());
-                }
-            }
-            else
-            {
-                System.out.println("Invalid option.");
+                System.out.println(e.toString());
             }
 
             System.out.print(">>");
