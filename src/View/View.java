@@ -16,9 +16,9 @@ public class View
     long movie_id = 0;
     long rental_id = 0;
 
-    public View(Controller _ctrl)
+    public View(Controller ctrl_p)
     {
-        ctrl = _ctrl;
+        ctrl = ctrl_p;
     }
 
     public void printOptions()
@@ -31,6 +31,7 @@ public class View
         System.out.println("5.Rent movie");
         System.out.println("6.All clients");
         System.out.println("7.All rentals");
+        System.out.println("8.Most rented movies");
         System.out.println("0.Exit");
         System.out.println();
     }
@@ -162,6 +163,12 @@ public class View
             {
                 for (Rental r : ctrl.getAllRentals()) {
                     System.out.println(r.toString());
+                }
+            }
+            else if (option == 8)
+            {
+                for (Movie m : ctrl.mostRented()){
+                    System.out.println(m.toString());
                 }
             }
             else
