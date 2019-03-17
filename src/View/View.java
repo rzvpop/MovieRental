@@ -57,7 +57,7 @@ public class View
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Name:");
-        String name = scanner.next();
+        String name = scanner.nextLine();
 
         System.out.println("Date:");
         String date = scanner.next();
@@ -76,7 +76,7 @@ public class View
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Name: ");
-        String name = scanner.next();
+        String name = scanner.nextLine();
 
         System.out.println("Age: ");
         int age = scanner.nextInt();
