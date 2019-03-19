@@ -3,14 +3,9 @@ package Controller;
 import Domain.Client;
 import Domain.Movie;
 import Domain.Rental;
-import Domain.RentalComparatorByMovie;
 import Repo.Repo;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -29,47 +24,31 @@ public class Controller {
 
     public void returnMovie(long movie_id)
     {
-        for(Rental r : rental_repo.findAll())
-        {
-            if(r.getMovie().getId() == movie_id)
-            {
-                r.setReturned(true);
-                rental_repo.update(r);
-            }
-        }
+        StreamSupport.stream(rental_repo.findAll().spliterator(), false).
+                filter(r -> r.getMovie().getId() == movie_id).
+                forEach(r -> {r.setReturned(true);
+                            rental_repo.update(r);
+                        });
     }
 
     public Set<Movie> mostRented()
     {
         if(rental_repo.size() > 0)
         {
-            Set<Rental> all = (Set<Rental>) rental_repo.findAll();
-            ArrayList<Rental> rentals = new ArrayList<>(all);
-            RentalComparatorByMovie cmp = new RentalComparatorByMovie();
+            ArrayList<Rental> rentals = new ArrayList<>((Set<Rental>) rental_repo.findAll());
 
-            rentals.sort(cmp);
-            int[] nr_rented = new int[Math.toIntExact(rentals.get(rentals.size() - 1).getMovie().getId())];
+            Map<Long, Long> nr_rented = new HashMap<>();
+            rentals.forEach(r -> nr_rented.put(r.getMovie().getId(),
+                    rentals.stream().
+                            filter(r_id -> r_id.getMovie().getId().equals(r.getMovie().getId())).count()));
 
-            for (Rental r : rentals)
-            {
-                ++nr_rented[Math.toIntExact(r.getMovie().getId()) - 1];
-            }
+            long max = nr_rented.entrySet().stream().max(Map.Entry.comparingByValue()).get().getValue();
 
-            int max = -1;
-            for(int i : nr_rented)
-            {
-                if(i > max)
-                    max = i;
-            }
+            Set<Map.Entry<Long, Long>> most_rented_id = nr_rented.entrySet().stream().filter(r -> r.getValue() == max)
+                    .collect(Collectors.toSet());
 
             Set<Movie> most_rented = new HashSet<>();
-            for(int i = 0; i < nr_rented.length; ++i)
-            {
-                if(nr_rented[i] == max)
-                {
-                    most_rented.add(movie_repo.findOne((long)i + 1).get());
-                }
-            }
+            most_rented_id.forEach(r -> most_rented.add(movie_repo.findOne(r.getKey()).get()));
 
             return most_rented;
         }

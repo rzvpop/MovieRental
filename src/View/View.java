@@ -7,21 +7,20 @@ import Domain.Rental;
 
 import java.util.Optional;
 import java.util.Scanner;
-import java.util.Set;
 
 public class View
 {
     private Controller ctrl;
-    long client_id = 0;
-    long movie_id = 0;
-    long rental_id = 0;
+    private long client_id = 0;
+    private long movie_id = 0;
+    private long rental_id = 0;
 
     public View(Controller ctrl_p)
     {
         ctrl = ctrl_p;
     }
 
-    public void printOptions()
+    private void printOptions()
     {
         System.out.println("Menu:");
         System.out.println("1.Add movie");
@@ -37,9 +36,9 @@ public class View
         System.out.println();
     }
 
-    public int getOption(){
+    private int getOption(){
         Scanner scanner = new Scanner(System.in);
-        int option = 0;
+        int option;
         try {
             option = scanner.nextInt();
         }
@@ -52,7 +51,7 @@ public class View
 
 
 
-    public Movie readMovie()
+    private Movie readMovie()
     {
         Scanner scanner = new Scanner(System.in);
 
@@ -71,7 +70,7 @@ public class View
         return movie;
     }
 
-    public Client readClient()
+    private Client readClient()
     {
         Scanner scanner = new Scanner(System.in);
 
@@ -87,20 +86,15 @@ public class View
         return client;
     }
 
-    public Rental readRental()
+    private Rental readRental()
     {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Client id: ");
         long c_id = scanner.nextLong();
-        //String c_name = scanner.next();
 
         System.out.println("Movie id: ");
         long m_id = scanner.nextLong();
-        //String m_name = scanner.next();
-
-        //Set<Client> clients = ctrl.getAllClients();
-        //Set<Movie> movie = ctrl.getAllMovies();
 
         Optional<Client> c = ctrl.getClientRepo().findOne(c_id);
         Optional<Movie> m = ctrl.getMovieRepo().findOne(m_id);
@@ -120,7 +114,7 @@ public class View
     {
         printOptions();
 
-        int option = 0;
+        int option;
         Scanner scanner = new Scanner(System.in);
 
         System.out.print(">>");
