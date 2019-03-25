@@ -1,0 +1,6 @@
+100,Ionel,28
+101,Danut,32
+102,Gigu,84
+103,Papi,23
+104,Cadena,45
+105,Valiu,45
