@@ -12,11 +12,6 @@ import Repo.RentalJDBCRepository;
 import Repo.Repository;
 import View.View;
 
-import java.io.DataInput;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
 
 public class Main
 {
@@ -41,5 +36,4 @@ public class Main
 
         view.run();
     }
-
 }
