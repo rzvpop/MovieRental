@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT movies (movie*)>
+<!ELEMENT movie (title, genre, year, clientList)>
+<!ATTLIST movie id ID #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT clientList (client*)>
+<!ELEMENT client (#PCDATA)>

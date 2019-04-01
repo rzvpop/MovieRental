@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT rentals (rental*)>
+<!ELEMENT rental (movieId, clientId, returned)>
+<!ATTLIST rental id ID #REQUIRED>
+<!ELEMENT movieId (#PCDATA)>
+<!ELEMENT clientId (#PCDATA)>
+<!ELEMENT returned (#PCDATA)>

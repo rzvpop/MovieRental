@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE clients PUBLIC "clientsDB.dtd" "clientsDB.dtd">
+<clients><client id="10"><name>svd</name><email>65</email><movieList><movie>20</movie><movie>10</movie></movieList></client><client id="20"><name>drt</name><email>24</email><movieList><movie>20</movie></movieList></client><client id="1"><name>herbalife</name><age>8</age><movieList/></client></clients>

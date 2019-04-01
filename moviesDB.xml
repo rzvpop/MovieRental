@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE movies PUBLIC "moviesDB.dtd" "moviesDB.dtd">
+<movies><movie id="10"><title>bsr</title><genre>12/12/2012</genre><year>2012</year><clientList/></movie><movie id="20"><title>kolj</title><genre>11/11/2011</genre><year>2012</year><clientList><client>20</client><client>10</client></clientList></movie><movie id="1"><title>Creed</title><date>08/11/2018</date><price>20</price><clientList/></movie></movies>

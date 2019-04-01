@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT clients (client*)>
+<!ELEMENT client (name, email, movieList)>
+<!ATTLIST client id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT movieList (movie*)>
+<!ELEMENT movie (#PCDATA)>
